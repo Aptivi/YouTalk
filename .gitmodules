@@ -1,0 +1,3 @@
+[submodule "assets/espeak-ng"]
+	path = assets/espeak-ng
+	url = https://github.com/espeak-ng/espeak-ng

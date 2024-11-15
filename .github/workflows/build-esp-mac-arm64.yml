@@ -1,0 +1,35 @@
+name: Build espeak-ng library (macOS - ARM64)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+          ref: ${{ github.ref }}
+      - name: Setting up environment
+        run: |
+          brew install autoconf automake libtool pcaudiolib ronn
+      - name: espeak-ng compilation
+        run: |
+          cd assets/espeak-ng ; ./autogen.sh ; ./configure ; make
+      - name: espeak-ng artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: "espeak-ng library"
+          path: assets/espeak-ng/src/.libs/libespeak-ng.so
+      - name: espeak-ng data artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: "espeak-ng data"
+          path: assets/espeak-ng/espeak-ng-data
