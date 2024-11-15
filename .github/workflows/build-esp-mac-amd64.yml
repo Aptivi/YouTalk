@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: "espeak-ng library"
-          path: assets/espeak-ng/src/.libs/libespeak-ng.so
+          path: assets/espeak-ng/src/.libs/libespeak-ng.dylib
       - name: espeak-ng data artifacts
         uses: actions/upload-artifact@v4
         with:
