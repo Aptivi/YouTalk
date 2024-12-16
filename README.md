@@ -5,7 +5,7 @@
 <br>
     
 <img
-  src = 'https://cdn.jsdelivr.net/gh/Aptivi/YouTalk@main/YouTalk/OfficialAppIcon-YouTalk-512.png'
+  src = 'https://cdn.jsdelivr.net/gh/Aptivi/YouTalk@main/assets/OfficialAppIcon-YouTalk-512.png'
   width = 256
   align = center
 />

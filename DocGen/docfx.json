@@ -3,7 +3,7 @@
         {
             "src": [
                 {
-                    "files": [ "YouTalk/**.csproj", "YouTalk.Calendar/**.csproj" ],
+                    "files": [ "public/**/*.csproj" ],
                     "src": ".."
                 }
             ],

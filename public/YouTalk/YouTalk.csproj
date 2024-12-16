@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyTitle>Aptivi</AssemblyTitle>
+    <AssemblyTitle>YouTalk</AssemblyTitle>
     <AssemblyDescription>Cross-platform text-to-speech (TTS) library</AssemblyDescription>
     <Description>A C# library that allows you to play with text-to-speech (TTS) feature without worrying about platform support.</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -21,14 +21,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\README.md">
+    <None Include="..\..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
   <!--<ItemGroup>
-    <None Include="OfficialAppIcon-YouTalk-512.png">
+    <None Include="../../assets/OfficialAppIcon-YouTalk-512.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
